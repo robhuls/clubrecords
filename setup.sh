@@ -29,3 +29,11 @@ pip install -r requirements.txt
 
 # Install uwsgi as server
 pip install uwsgi
+
+# Add docker from the docker repo to get the latest version
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu disco test"
+apt install docker-ce -y
+usermod -aG docker hulsr
+
+
